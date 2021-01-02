@@ -12,7 +12,5 @@ app.use(bodyParser.urlencoded({
 app.use('/api',route);
 app.use(express.static(path.join(__dirname, '/')));
 
-
-
-const port =4000;
+const port =8000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));

@@ -1,6 +1,4 @@
 const mongoose = require('mongoose');
-const orderData=require('./order');
-const dataService = require('../service');
 var Schema = mongoose.Schema;
 
 userSchema = new Schema( {
@@ -18,8 +16,7 @@ userSchema = new Schema( {
         default:0
     }
 }),
-User = mongoose.model('User', userSchema);
-
+User = mongoose.model('users', userSchema);
 module.exports = User;
 
 

@@ -7,9 +7,7 @@ orderSchema = new Schema( {
         required:true
     },
     userId: {
-        type: Number,
-        ref: 'User',
-        required: true
+        type: Number
     },
     subtotal: {
         type: Number,
@@ -18,14 +16,9 @@ orderSchema = new Schema( {
     date: {
         type: String,
         required:true
-    },
-    userObjectId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: true
     }
 }),
-Order = mongoose.model('Order', orderSchema);
+Order = mongoose.model('orders', orderSchema);
 module.exports = Order;
 
 

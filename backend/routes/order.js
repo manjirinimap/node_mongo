@@ -4,9 +4,13 @@ const orderController=require('../controller/order');
 
 orderRouter.post('/add-order',orderController.addOrder);
 
-orderRouter.post('/get-user-list',orderController.getOrderList);
+orderRouter.get('/get-order-list',orderController.getOrderList);
 
-orderRouter.post('/get-user-details',orderController.getOrderDetails);
+orderRouter.delete("/delete-order",orderController.deleteOrder);
+
+orderRouter.post('/get-update-list',orderController.getUpdateUserList);
+
+orderRouter.post('/get-average-list',orderController.getAverageValue);
 
 
 
